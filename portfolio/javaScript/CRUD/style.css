@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: #72cf7a;
+    background: linear-gradient(180deg, rgba(114, 207, 122, 1) 0%, rgba(83, 237, 132, 1) 100%);
+}
+
+.container {
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.login-section {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.title {
+    color: #20222b;
+    font-size: 42px;
+    margin: 0;
+}
+
+.form-block {
+    width: 100%;
+    max-width: 320px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+}
+
+.control-field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: stretch;
+    gap: 2px;
+}
+
+.form-label {
+    color: #20222b;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-control {
+    height: 38px;
+    padding: 0 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #20222b;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+.form-control_email {
+    text-transform: initial;
+}
+
+.btn {
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    transition: 0.3s ease-in-out all;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+hr {
+    background-color: #fff;
+    width: 100%;
+    margin: 15px 0;
+    height: 3px;
+
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.submit-btn {
+    margin: 5px 0 0 0;
+    background-color: #377bcf;
+}
+
+.users-container {
+    margin: 0 auto;
+    padding: 20px 20px 50px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 10px;
+}
+
+.user-card {
+    border: 1px solid #2f2f2f;
+    border-radius: 5px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: linear-gradient(180deg, #4d6f93 0%, #a84545a6 100%);
+    color: #fff;
+    position: relative;
+
+    h3 {
+        margin: 0;
+    }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+        margin: 0;
+        height: 200px;
+        margin-top: auto;
+        display: block;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+
+    span {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+
+    .user-remove-btn {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        cursor: pointer;
+    }
+}

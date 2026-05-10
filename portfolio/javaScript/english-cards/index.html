@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>English Cards</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card__image">
+                <img src="" loading="lazy" alt="">
+            </div>
+            <div class="card__title"></div>
+        </div>
+
+
+        <label class="interact">
+            <input class="interact__input" placeholder="Введите свой ответ" type="text">
+            <button class="btn btn-check" type="submit">Проверить</button>
+        </label>
+
+        <button class="btn btn-next">Следующая карточка</button>
+
+        <div class="text-for-user"></div>
+
+        <div class="counter"><span class="firstCard"></span> карточка из <span class="lastCard"></span> </div>
+        <div class="progress-bar-container">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
+
+    </div>
+
+    <script src="main.js" defer type="module"></script>
+    <script src="cardsArr.js" defer type="module"></script>
+</body>
+
+</html>

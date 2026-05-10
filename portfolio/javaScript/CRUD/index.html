@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Приложение с отрисовкой пользователей. CRUD операции</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <section class="login-section">
+            <h1 class="title">Users App</h1>
+
+
+            <div class="form-block">
+                <form class="form" data-create-user-form>
+                    <div class="control-field">
+                        <label class="form-label" for="NameID">Name</label>
+                        <input class="form-control" type="text" id="NameID" name="userName" required minlength="2"
+                            maxlength="14">
+                    </div>
+
+                    <div class="control-field">
+                        <label class="form-label" for="CityID">City</label>
+                        <input class="form-control" type="text" id="CityID" name="userCity" required minlength="2"
+                            maxlength="20">
+                    </div>
+
+
+                    <div class="control-field">
+                        <label class="form-label" for="EmailID">Email</label>
+                        <input class="form-control form-control_email" type="text" id="EmailID" name="userEmail"
+                            required>
+                    </div>
+
+                    <div class="control-field">
+                        <label class="form-label" for="ImagesUrlID">Images</label>
+
+                        <select class="form-control form-control_images" name="userImageUrl" id="ImagesUrlID" required>
+                            <option value="">ImageURL</option>
+                            <hr>
+                            <option
+                                value="https://img.freepik.com/free-photo/cute-kitten-with-fluffy-fur-staring-playful-curious-generated-by-artificial-intelligence_188544-127456.jpg?semt=ais_hybrid">
+                                Cat 1</option>
+                            <option
+                                value="https://avatars.mds.yandex.net/i?id=0386bac3b15bbe0b20e7a5a1f5a2b153_l-5296782-images-thumbs&n=13">
+                                Cat 2</option>
+                            <option value="https://i.pinimg.com/736x/09/49/3f/09493fa715cdbd298daf436796acf4d8.jpg">Cat
+                                3</option>
+                            <option
+                                value="https://i.pinimg.com/originals/79/58/05/79580540e245f2141498ea11d9ecae8a.png?nii=t">
+                                Fox</option>
+                            <option
+                                value="https://img.freepik.com/free-photo/cute-puppy-playing-outdoors-sitting-grass-looking-camera-generated-by-artificial-intelligence_188544-129243.jpg?semt=ais_hybrid">
+                                Dog 1</option>
+                            <option
+                                value="https://t4.ftcdn.net/jpg/06/45/00/79/360_F_645007940_ns70em7Jp7NY3KkGcQv01Ibu2lzenHbB.jpg">
+                                Dog 2</option>
+                            <option
+                                value="https://img.freepik.com/premium-photo/close-up-portrait-dog-field_1048944-29746133.jpg?semt=ais_hybrid&w=740">
+                                Dog 3</option>
+                            <option
+                                value="https://i.pinimg.com/originals/73/96/cf/7396cf0bea498b44bb2054a72ff771a7.jpg?nii=t">
+                                Wolf</option>
+                        </select>
+                    </div>
+
+                    <button class="btn submit-btn" type="submit">Create User</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <div class="users-container" data-users-container></div>
+
+    </div>
+
+</body>
+
+</html>
